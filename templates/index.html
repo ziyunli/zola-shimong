@@ -22,9 +22,12 @@
     {% endblock extra_head %}
 	</head>
 	<body>
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
     <main id="intro">
       <h1>{{ config.title }}</h1>
-
       <nav>
         <a href="{{ config.base_url }}">home</a> &middot;
         <a href="{{ config.base_url }}/blog">blog</a> &middot;
@@ -32,7 +35,7 @@
         <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
         {% endif %}
       </nav>
-
+    {% endblock content %}
     </main>
-	</body>
+  </body>
 </html>

@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block header %}
+<header>
+  <h1>{{ config.title }}</h1>
+</header>
+{% endblock header %}
+
+
+{% block content %}
+<div id="main">
+	<nav>
+    <a href="{{ config.base_url }}">home</a> &middot;
+    <a href="{{ config.base_url }}/blog">blog</a> &middot;
+    {% if config.extra.github %}
+    <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
+    {% endif %}
+  </nav>
+  <main>
+    <article>
+      <header>
+        <h1>{{ page.title }}</h1>
+        <time datetime='{{ page.date | date(format="%Y-%m-%d") }}'>{{ page.date | date(format="%Y-%m-%d")}}</time>
+      </header>
+
+      {{ page.content | safe }}
+    </article>
+  </main>
+{% endblock content %}
