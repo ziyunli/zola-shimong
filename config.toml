@@ -1,25 +1,8 @@
-name = "zola-shimong"
+base_url = "https://zola-shimong.netlify.com"
+title = "시몽"
+compile_sass = false
 description = "A minimalistic blog theme"
-license = "MIT"
-homepage = "https://github.com/getzola/hyde"
-# The minimum version of Zola required
-min_version = "0.14.1"
-# An optional live demo URL
-demo = ""
+generate_feed = true
 
-# Any variable there can be overridden in the end user `config.toml`
-# You don't need to prefix variables by the theme name but as this will
-# be merged with user data, some kind of prefix or nesting is preferable
-# Use snake_casing to be consistent with the rest of Zola
 [extra]
-
-# The theme author info: you!
-[author]
-name = "Ziyun Li"
-homepage = "https://ziyunli.dev"
-
-# If this is porting a theme from another static site engine, provide
-# the info of the original author here
-[original]
-author =  "emersion"
-homepage = "https://emersion.fr"
+github = "ziyunli"
