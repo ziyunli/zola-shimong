@@ -1,0 +1,7 @@
+<nav>
+  <a href="{{ config.base_url }}">home</a> &middot;
+  <a href="{{ config.base_url }}/blog">blog</a> &middot;
+  {% if config.extra.github %}
+  <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
+  {% endif %}
+</nav>

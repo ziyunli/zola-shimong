@@ -1,21 +1,11 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
-{% block header %}
+{% block body %}
 <header>
   <h1>{{ config.title }}</h1>
 </header>
-{% endblock header %}
-
-
-{% block content %}
 <div id="main">
-	<nav>
-    <a href="{{ config.base_url }}">home</a> &middot;
-    <a href="{{ config.base_url }}/blog">blog</a> &middot;
-    {% if config.extra.github %}
-    <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
-    {% endif %}
-  </nav>
+  {% include "nav.html" %}
   <main>
     <article>
       <header>
@@ -26,4 +16,5 @@
       {{ page.content | safe }}
     </article>
   </main>
-{% endblock content %}
+</div>
+{% endblock body %}
