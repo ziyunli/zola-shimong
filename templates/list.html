@@ -11,7 +11,7 @@
     <h1>{{ section.title }}</h1>
 
     <div class="article-list">
-      {% for page in paginator.pages %}
+      {% for page in section.pages %}
       <article>
           <header>
           <time datetime='{{ page.date | date(format="%Y-%m-%d %H:%M:%S") }}'>{{ page.date | date(format="%Y-%m-%d")}}</time>
