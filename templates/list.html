@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html" %}
+{% endblock header %}
+
+{% block body %}
+<div id="main">
+  {% include "nav.html" %}
+  <main>
+    <h1>{{ section.title }}</h1>
+
+    <div class="article-list">
+      {% for page in paginator.pages %}
+      <article>
+          <header>
+          <time datetime='{{ page.date | date(format="%Y-%m-%d %H:%M:%S") }}'>{{ page.date | date(format="%Y-%m-%d")}}</time>
+          <h3>
+              <a href="{{ page.permalink }}">{{ page.title }}</a>
+              </h3>
+          </header>
+      </article>
+      {% endfor %}
+    </div>
+  </main>
+</div>
+{% endblock body %}
