@@ -4,6 +4,10 @@
 {% include "header.html" %}
 {% endblock header %}
 
+{% block title %}
+{{ config.title }} | {{ section.title }}
+{% endblock title %}
+
 {% block body %}
 <div id="main">
   {% include "nav.html" %}
