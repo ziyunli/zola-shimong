@@ -7,4 +7,3 @@ generate_feed = true
 [extra]
 github = "ziyunli"
 twitter = "@ziyun_li"
-# twitter_image_path = "/image.png"
