@@ -8,8 +8,6 @@
     <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{% block twitter_title %}{{ config.title }}{% endblock twitter_title %}" />
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
@@ -19,6 +17,19 @@
 
     {% if config.generate_feed %}
       <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+    {% endif %}
+
+
+    <!-- Twitter Card https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{% block twitter_title %}{{ config.title }}{% endblock twitter_title %}" />
+
+    {% if config.extra.twitter %}
+      <meta name="twitter:site" content="{{ config.extra.twitter }}" />
+    {% endif %}
+
+    {% if config.extra.twitter_image_path %}
+      <meta name="twitter:image" content="{{ get_url(path=config.extra.twitter_image_path, trailing_slash=false) }}" />
     {% endif %}
 
     {% block extra_head %}
