@@ -4,12 +4,11 @@
 {% include "header.html" %}
 {% endblock header %}
 
-{% block title %}
-{{ page.title }}
-{% endblock title %}
-
-
-{% block twitter_title %}{{ page.title }} by {{ config.title}}{% endblock twitter_title %}
+{% block meta_content %}
+<title>{{ page.title }}</title>
+<meta name="twitter:title" content="{{ page.title }}">
+<meta property="og:title" content="{{ page.title }}" />
+{% endblock meta_content %}
 
 {% block body %}
 <div id="main">
