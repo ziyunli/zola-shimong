@@ -24,14 +24,12 @@
       <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
     {% endif %}
 
-    <!-- Twitter Card https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{% block meta_title %}{{ config.title }}{% endblock meta_title %}" />
     {% if config.extra.twitter %}
-      <meta name="twitter:site" content="{{ config.extra.twitter }}" />
-      <meta name="twitter:creator" content="{{ config.extra.twitter }}">
+    <meta name="twitter:site" content="{{ config.extra.twitter }}" />
+    <meta name="twitter:creator" content="{{ config.extra.twitter }}">
     {% endif %}
 
+    <meta name="twitter:card" content="summary" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="{{ config.title }}" />
     {% if current_url %}
