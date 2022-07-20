@@ -1,7 +1,11 @@
 <nav>
   <a href="{{ config.base_url }}">home</a> &middot;
+  <a href="{{ config.base_url }}/about">about</a> &middot;
   <a href="{{ config.base_url }}/blog">blog</a> &middot;
   {% if config.extra.github %}
   <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
+  {% endif %} &middot;
+  {% if config.extra.twitter %}
+  <a rel="twitter" href="https://twitter.com/{{ config.extra.twitter }}">twitter</a>
   {% endif %}
 </nav>
