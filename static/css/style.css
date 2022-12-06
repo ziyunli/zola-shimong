@@ -10,6 +10,11 @@ body > header {
 	text-align: center;
 }
 
+body > header a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 body > header h1 {
 	width: 1.5em;
 	font-size: 10em;
