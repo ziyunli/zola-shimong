@@ -1,14 +1,13 @@
 <nav>
-  <a href="{{ config.base_url }}">home</a> &middot;
   <a href="{{ config.base_url }}/about">about</a> &middot;
   <a href="{{ config.base_url }}/posts">posts</a> &middot;
   {% if config.extra.blog %}
-  <a href="{{ config.extra.blog }}">blog</a>
+  <a href="{{ config.extra.blog }}">blog</a> &middot;
   {% endif %}
   {% if config.extra.github %}
-  &middot; <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>
+  <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>  &middot;
   {% endif %}
   {% if config.extra.twitter %}
-  &middot; <a rel="twitter" href="https://twitter.com/{{ config.extra.twitter }}">twitter</a>
+  <a rel="twitter" href="https://twitter.com/{{ config.extra.twitter }}">twitter</a>
   {% endif %}
 </nav>
