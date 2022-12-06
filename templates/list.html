@@ -18,10 +18,8 @@
       {% for page in section.pages %}
       <article>
           <header>
-          <time datetime='{{ page.date | date(format="%Y-%m-%d %H:%M:%S") }}'>{{ page.date | date(format="%Y-%m-%d")}}</time>
-          <h3>
-              <a href="{{ page.permalink }}">{{ page.title }}</a>
-              </h3>
+            <time datetime='{{ page.date | date(format="%Y-%m-%d %H:%M:%S") }}'>{{ page.date | date(format="%Y-%m-%d")}}</time>
+            <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
           </header>
       </article>
       {% endfor %}
