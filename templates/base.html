@@ -16,6 +16,9 @@
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
+    <!-- JS -->
+    <script blocking="render" async src="{{ get_url(path="js/index.js", trailing_slash=false) }}"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ get_url(path="css/nanum-gothic-coding.css", trailing_slash=false) }}" media="print">
     <link rel="stylesheet" href="{{ get_url(path="css/style.css", trailing_slash=false) }}">
