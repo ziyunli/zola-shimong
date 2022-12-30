@@ -1,5 +1,5 @@
 base_url = "https://zola-shimong.netlify.com"
-title = "Shimong"
+title = "子雲"
 compile_sass = true
 generate_feed = true
 
