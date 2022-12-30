@@ -9,7 +9,7 @@ generate_feed = true
 # ]
 
 [extra]
-author = "Vincent"
+author = "Ziyun Li"
 shimong_menu = [
     {url = "$BASE_URL/posts", name = "blog"},
     {url = "$BASE_URL/about", name = "about"},
