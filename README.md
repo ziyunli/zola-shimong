@@ -11,8 +11,9 @@
 - [shimong](#shimong)
   - [Contents](#contents)
   - [Installation](#installation)
-  - [Options](#options)
-    - [Nav](#nav)
+  - [Content](#content)
+  - [Taxonomies](#taxonomies)
+  - [Nav](#nav)
   - [Original](#original)
 
 ## Installation
@@ -28,6 +29,8 @@ and then enable it in your `config.toml`:
 theme = "shimong"
 ```
 
+## Content
+
 This theme requires your organizes your posts in a `content/posts` folder, where you should also have an `_index.md` file with the following content:
 
 ```md
@@ -39,6 +42,19 @@ generate_feed = true
 +++
 ```
 
+The `contents` folder looks like this:
+
+```
+content
+├── posts
+│  ├── _index.md
+│  ├── some-article.md
+│  └── some-other-article.md
+└── about.md
+```
+
+## Taxonomies
+
 The theme requires tags and categories taxonomies to be enabled in your `config.toml`:
 
 ```toml
@@ -49,9 +65,7 @@ taxonomies = [
 ]
 ```
 
-## Options
-
-### Nav
+## Nav
 Set a field in `extra` with a key of `shimong_menu`:
 
 ```toml
