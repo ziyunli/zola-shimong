@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/545b20bd-ce8d-43d7-b0f7-63de2200eccf/deploy-status)](https://app.netlify.com/sites/zola-shimong/deploys)
 
+Demo Site: https://zola-shimong.netlify.app/
+
 ![screenshot](https://github.com/ziyunli/zola-shimong/blob/main/screenshot.png?raw=true)
 
 
