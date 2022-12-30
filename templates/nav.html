@@ -1,13 +1,10 @@
-<nav>
-  <a href="{{ config.base_url }}/about">about</a> &middot;
-  <a href="{{ config.base_url }}/posts">posts</a> &middot;
-  {% if config.extra.blog %}
-  <a href="{{ config.extra.blog }}">blog</a> &middot;
-  {% endif %}
-  {% if config.extra.github %}
-  <a rel="github" href="https://github.com/{{ config.extra.github }}">github</a>  &middot;
-  {% endif %}
-  {% if config.extra.twitter %}
-  <a rel="twitter" href="https://twitter.com/{{ config.extra.twitter }}">twitter</a>
-  {% endif %}
+{% if config.extra.shimong_menu %}
+<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+{% for item in config.extra.shimong_menu %}
+    <a itemprop="url"
+        class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+        href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+        <span itemprop="name">{{ item.name }}</span></a> {% if not loop.last %} &middot; {% endif %}
+{% endfor %}
 </nav>
+{% endif %}

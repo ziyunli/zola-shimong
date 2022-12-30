@@ -1,5 +1,5 @@
-name = "zola-shimong"
-description = "A minimalistic blog theme"
+name = "shimong"
+description = "A minimalistic theme for Zola"
 license = "MIT"
 homepage = "https://github.com/ziyunli/zola-shimong"
 # The minimum version of Zola required
@@ -16,10 +16,11 @@ demo = ""
 # The theme author info: you!
 [author]
 name = "Ziyun Li"
-homepage = "https://ziyunli.dev"
+homepage = "https://www.ziyunli.dev"
 
 # If this is porting a theme from another static site engine, provide
 # the info of the original author here
 [original]
 author =  "emersion"
 homepage = "https://emersion.fr"
+repo = "https://git.sr.ht/~emersion/emersion.fr"

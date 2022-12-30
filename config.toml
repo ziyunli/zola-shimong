@@ -1,9 +1,18 @@
 base_url = "https://zola-shimong.netlify.com"
-title = "시몽"
-compile_sass = false
-description = "A minimalistic blog theme"
+title = "Hello"
+compile_sass = true
 generate_feed = true
 
+# taxonomies = [
+#     {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
+
 [extra]
-github = "ziyunli"
-twitter = "@ziyun_li"
+author = "Vincent"
+shimong_menu = [
+    {url = "$BASE_URL/posts", name = "blog"},
+    {url = "$BASE_URL/about", name = "about"},
+    {url = "https://github.com/ziyunli", name = "github"},
+    {url = "https://twitter.com/ziyun_li", name = "twitter"},
+]
