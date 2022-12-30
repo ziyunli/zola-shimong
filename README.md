@@ -2,9 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/545b20bd-ce8d-43d7-b0f7-63de2200eccf/deploy-status)](https://app.netlify.com/sites/zola-shimong/deploys)
 
-![main page screenshot](https://github.com/ziyunli/zola-shimong/blob/main/main.png?raw=true)
+![screenshot](https://github.com/ziyunli/zola-shimong/blob/main/screenshot.png?raw=true)
 
-![posts page screenshot](https://github.com/ziyunli/zola-shimong/blob/main/posts.png?raw=true)
 
 ## Contents
 
