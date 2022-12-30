@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "header.html" %}
+{% endblock header %}
+
+{% block title %}
+{{ config.title }} | Tags
+{% endblock title %}
+
+{% block body %}
+<div id="main">
+  {% include "nav.html" %}
+  <main>
+    <h1>Tags</h1>
+
+    {% if terms %}
+    <ul>
+        {% for term in terms %}
+            <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+  </main>
+</div>
+{% endblock body %}

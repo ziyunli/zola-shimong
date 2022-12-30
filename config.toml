@@ -1,18 +1,18 @@
 base_url = "https://zola-shimong.netlify.com"
-title = "Hello"
+title = "Shimong"
 compile_sass = true
 generate_feed = true
 
-# taxonomies = [
-#     {name = "categories", feed = true},
-#     {name = "tags", feed = true},
-# ]
+taxonomies = [
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
 
 [extra]
 author = "Ziyun Li"
 shimong_menu = [
     {url = "$BASE_URL/posts", name = "blog"},
     {url = "$BASE_URL/about", name = "about"},
-    {url = "https://github.com/ziyunli", name = "github"},
-    {url = "https://twitter.com/ziyun_li", name = "twitter"},
+    {url = "$BASE_URL/categories", name = "categories"},
+    {url = "$BASE_URL/tags", name = "tags"},
 ]
