@@ -16,9 +16,6 @@
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-    <!-- JS -->
-    <script blocking="render" async src="{{ get_url(path="js/index.js", trailing_slash=false) | safe }}"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
 
